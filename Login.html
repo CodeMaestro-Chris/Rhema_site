@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./CSS/Rhema.css">
+    <link rel="stylesheet" href="./CSS/aos.css">
+    <link rel="stylesheet" href="./bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/NG-Rhema-University.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- <div id="preloader"><img src="./assets/rhema-aba.png"></div> -->
+    <div class="login">
+        <div class="school">
+            <img src="./assets/NG-Rhema-University.png" width="75px">
+            <h2>Rhema University</h2>
+        </div>
+        <div class="fill">
+            <div id="play1"></div>
+            <div id="play2"></div>
+            <div id="play3"></div>
+            <div id="play4"></div>
+            <div id="play5"></div>
+            <form action="./Dashboard/index-1.html"
+                name="aboutForm2"
+                class="mb-5"
+                id="myForm"
+                method="post"
+                onsubmit="return login()"
+                data-netlify="true">
+                <div class="msg"><p id="msg"></p></div>
+                <div class="row1">
+                    <div class="fullname">
+                        <span>Fullname</span>
+                        <input type="text" name="fullname" id="namE">
+                    </div>
+                    <div class="registration-number">
+                        <span>Registration Number</span>
+                        <input type="text" name="registrationnumber" id="regnumber">
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="student-email">
+                        <span>Email Address</span>
+                        <input type="email" name="mail" id="mail"> 
+                    </div>
+                    <div class="passkey">
+                        <span>Create Password</span>
+                        <input type="password" id="password">
+                    </div>
+                </div>
+                <span>Add a bio</span><br>
+                <textarea name="bio" id="bio" cols="30" rows="3"></textarea><br>
+                <!-- <input type="text" name="aboutme" id="bio" style="width: 420px; height: 80px;"><br> -->
+                <!-- <span>Upload Photo (Optional)</span><br>
+                <input type="file" accept="image/*" name="picture" id="dp">
+                <label class="picname"><i class="bi bi-image"></i> Add Photo</label> -->
+                <!-- <span>Tick Below</span><br> -->
+                <span>I am a 400 Level Computer Science Student</span> <br> 
+                <p><input type="radio" id="yes" name="agree" value="yes">Yes 
+                    <input type="radio" id="no" name="agree" value="no" style="margin-left: 20px;">No</p>
+                
+                <button type="submit">Create an Account</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/bootstrap.bundle.js"></script>
+    <script src="./JS/Rhema.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
